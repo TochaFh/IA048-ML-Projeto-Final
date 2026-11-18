@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ia048-ml2"
+version = "0.1.0"
+dependencies = [
+    "numpy",
+    "pandas",
+    "plotly",
+    "matplotlib",
+    "scikit-learn",
+    "nbformat",
+    "ipykernel",
+#    "torch",        # checar versão do pytorch que usa gpu
+]
+
+[tool.setuptools]
+packages = ["pymod"]
